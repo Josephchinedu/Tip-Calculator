@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tip Calculator</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Joseph Chinedu">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<!-- bootstrap css -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<!-- :::::: End of bootstrap css -->
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<script src="js/bootstrap.bundle.js"></script>
+	<script src="js/bootstrap.js"></script>
+
+	<!-- awesome font online link -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+</head>
+<body class="bg-dark">
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 offset-md-3" id="first">
+					<div id="tip_calculator">
+						<h4 style="text-align: center;">Tip Calculator</h4>
+						<div id="tip-calculator">
+							<form>
+								<h1>How much was your bill?</h1> <br />
+
+								<div class="row">
+									<div class="col-md-4" style="position: relative; top: 10px;"><h3>Bill:</h3></div>
+									<div class="col-md-6"><input type="number" value="%" class="form-control" id="currency"></div>
+									<div class="col-md-1" style="position: relative; top: 10px;"><h3>₦</h3></div>
+								</div>
+
+								<br> <br>
+
+								<div class="row">
+									<div class="col-md-4"><h3>Service: </h3></div>
+									<div class="col-md-6">
+										<select class="form-control" id="ServiceQal">
+											<option selected>0</option>
+											<option>25</option>
+											<option>50</option>
+											<option>75</option>
+											<option>100</option>
+										</select>
+									</div>
+									<div class="col-md-1"><h3>%</h3></div>
+								</div> <br>
+
+
+								<div class="row">
+									<div class="col-md-8"><h5>How many people are sharing the bill</h5></div>
+									<div class="col-md-4"><input type="number" name="number" class="form-control" id="peopleamt"></div>
+								</div><br>
+
+
+								<div class="row">
+									<div class="col-md-6 offset-md-3">
+										<center>
+											<button class="btn" type="button" id="cal"><span>Calculate</span></button>
+										</center>
+									</div>
+								</div> <br><br>
+
+
+
+								<div id="totalTip">
+									₦<span id="tip">0.00</span>
+									<small id="each" style="display: block;">each</small>
+								</div>
+							</form>
+						</div> 
+					</div><br><br>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+<script src="tip_calculator.js"></script>
+</body>
+</html>
