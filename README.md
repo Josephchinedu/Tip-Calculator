@@ -1,2 +1,2 @@
 # Tip-Calculator
-# view project
+# view project: https://josephchinedu.github.io/Tip-Calculator/
